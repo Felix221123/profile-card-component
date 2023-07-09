@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root{
+    --font-style:'Kumbh Sans', sans-serif;
+    --body-background:hsl(185, 75%, 39%);
+    --profile-name-num:hsl(229, 23%, 23%);
+    --followers-likes-photos:hsl(227, 10%, 46%);
+    --grayish-color:hsl(0, 0%, 59%);
+}
+
+*,*::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--body-background);
+    background-image:url(images/bg-pattern-bottom.svg),url(images/bg-pattern-top.svg);
+    background-position: top 300px left 60em, bottom 10em right 55em ;
+    background-repeat:no-repeat;
+    font-size: 100%;
+}
+
+.card-component{
+    width:24em;
+    height: 26em;
+    background-color: white;
+    margin: 6rem auto;
+    border-radius: 1em;
+}
+
+.background-pattern{
+    width: 100%;
+    height: 40%;
+    background-image: url(images/bg-pattern-card.svg);
+    border-top-right-radius:1em;
+    border-top-left-radius: 1em;
+}
+
+.profile-img{
+    transform: scale(1.1);
+    border-radius: 50%;
+    outline: 0.4rem solid white;
+    margin: 0rem auto;
+    display: block;
+    margin-top: -3rem;
+    margin-bottom: 1.3rem;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.profile-name-age{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 0.7rem;
+}
+.profile-name-age h1{
+    font-family: var(--font-style);
+    font-size: 1.3rem;
+    margin-right: 0.6rem;
+    color: var(--profile-name-num);
+    /* font-weight: 600; */
+}
+
+.profile-name-age p{
+    font-family: var(--font-style);
+    font-size: 1.3rem;
+    color: var(--followers-likes-photos);
+}
+
+.location{
+    text-align: center;
+    font-family: var(--font-style);
+    color: var(--followers-likes-photos);
+    font-size: 0.95rem;
+    margin-bottom:1.7rem;
+}
+
+hr{
+    height: 0.1px;
+    border:none;
+    background-color: var(--followers-likes-photos);
+}
+
+.followers-likes-photos-section{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    margin-top: 1.7rem;
+    column-gap: 0.1rem;
+    /* background-color: red; */
+    text-align: center;
+    justify-content: center;
+}
+
+p[class~=num]{
+    text-transform: uppercase;
+    font-family: var(--font-style);
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--profile-name-num);
+    margin-bottom: 0.2rem;
+    
+}
+
+p[class~=socials]{
+    font-family: var(--font-style);
+    font-size: 0.75rem;
+    color: var(--followers-likes-photos);
+    letter-spacing: 0.09rem;
+}
+
+.attribution{
+    text-align: center;
+    font-family: var(--font-style);
+    font-size: 1.3rem;
+    color: var(--profile-name-num);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--profile-name-num);
+}
+
+.attribution a:hover , .attribution a:focus{
+    border: 2px dashed var(--followers-likes-photos);
+    background-color: rgba(105, 77, 119, 0.99);
+    border-radius: 2rem;
+    color: white;
+    padding: 0.5rem;
+    transition: padding 0.4s;
+}
+
+@media only screen and (max-width:400px){
+    body{
+        background-color: var(--body-background);
+        background-image:url(images/bg-pattern-bottom.svg),url(images/bg-pattern-top.svg);
+        background-position: top 230px left 10em, bottom 30em right 8em ;
+        background-repeat:no-repeat;
+    }
+    .card-component{
+        width: 93vw;
+        margin: 9em auto;
+    }
+
+    .attribution{
+        margin-bottom: 3em;
+    }
+
+}
+
+@media (min-width:380px) and (max-width:500px){
+    body{
+        background-color: var(--body-background);
+        background-image:url(images/bg-pattern-bottom.svg),url(images/bg-pattern-top.svg);
+        background-position: top 230px left 10em, bottom 30em right 8em ;
+        background-repeat:no-repeat;
+    }
+    .card-component{
+        margin: 9em auto;
+    }
+
+    .attribution{
+        margin-bottom: 3em;
+    }
+
+}
+
+@media (min-width:500px) and (max-width:700px){
+    body{
+        background-color: var(--body-background);
+        background-image:url(images/bg-pattern-bottom.svg),url(images/bg-pattern-top.svg);
+        background-position: top 230px left 10em, bottom 30em right 8em ;
+        background-repeat:no-repeat;
+    }
+    .card-component{
+        margin: 9em auto;
+    }
+
+    .attribution{
+        margin-bottom: 3em;
+    }
+
+}
+
+@media (min-width:700px) and (max-width:1000px){
+    body{
+        background-color: var(--body-background);
+        background-image:url(images/bg-pattern-bottom.svg),url(images/bg-pattern-top.svg);
+        background-position: top 200px left 20em, bottom 30em right 30em ;
+        background-repeat:no-repeat;
+    }
+    .card-component{
+        margin: 9em auto;
+    }
+
+    .attribution{
+        margin-bottom: 3em;
+    }
+
+}
