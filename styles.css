@@ -42,7 +42,7 @@ body{
 .profile-img{
     transform: scale(1.1);
     border-radius: 50%;
-    outline: 0.4rem solid white;
+    border: 0.4rem solid white;
     margin: 0rem auto;
     display: block;
     margin-top: -3rem;
@@ -145,6 +145,9 @@ p[class~=socials]{
         width: 93vw;
         margin: 9em auto;
     }
+    .profile-img{
+        border: 0.4rem solid white;
+    }
 
     .attribution{
         margin-bottom: 3em;
@@ -152,7 +155,7 @@ p[class~=socials]{
 
 }
 
-@media (min-width:380px) and (max-width:500px){
+@media (min-width:400px) and (max-width:500px){
     body{
         background-color: var(--body-background);
         background-image:url(images/bg-pattern-bottom.svg),url(images/bg-pattern-top.svg);
@@ -161,6 +164,9 @@ p[class~=socials]{
     }
     .card-component{
         margin: 9em auto;
+    }
+    .profile-img{
+        border: 0.4rem solid white;
     }
 
     .attribution{
@@ -179,6 +185,9 @@ p[class~=socials]{
     .card-component{
         margin: 9em auto;
     }
+    .profile-img{
+        border: 0.4rem solid white;
+    }
 
     .attribution{
         margin-bottom: 3em;
@@ -195,6 +204,9 @@ p[class~=socials]{
     }
     .card-component{
         margin: 9em auto;
+    }
+    .profile-img{
+        border: 0.4rem solid white;
     }
 
     .attribution{
